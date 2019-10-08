@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <odoo>
     <data>
-        <menuitem name="Mis Noticias" id="ofimatica_news_parent_menu" sequence="85" web_icon="ofimatica_liabilities,static/description/icon4.png"/>
+        <menuitem name="Mis Noticias" id="ofimatica_news_parent_menu" sequence="85" web_icon="ofimatica_liabilities,static/description/icon2.png"/>
         <menuitem name="Noticias " id="ofimatica_news_menu" action="board.open_board_my_dash_action" parent="ofimatica_news_parent_menu" sequence="10"/>
         <menuitem name="Configuracion" id="ofimatica_news_config_menu"  action="board.open_board_my_dash_action" parent="ofimatica_news_parent_menu" sequence="20" />
     </data>
