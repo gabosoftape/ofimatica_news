@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE xml>
+<odoo>
+    <!-- create new category -->
+    <record id="category_ofimatica_news" model="ir.module.category" >
+            <field name="name">Noticias</field>
+            <field name="description">Modulo Noticias beehive.</field>
+    </record>
+    <!-- add category to groups -->
+    <!--Group for property manager -->
+    <record id="group_news_admin" model="res.groups">
+        <field name="name">Administrador Delegado</field>
+        <field name="category_id" ref="ofimatica_news.category_ofimatica_news"/>
+    </record>
+    <!--Group for Property owner -->
+    <record id="group_news_owner" model="res.groups">
+        <field name="name">Propietario</field>
+        <field name="category_id" ref="ofimatica_news.category_ofimatica_news"/>
+    </record>
+    <!--Group for property lessee-->
+    <record id="group_news_lessee" model="res.groups">
+        <field name="name">Arrendatario</field>
+        <field name="category_id" ref="ofimatica_news.category_ofimatica_news"/>
+    </record>
+</odoo>
